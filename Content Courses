@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About Me</a>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>MY E-CLASSROOM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(../static/images/classroom1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="../static/logos/edutechional.png">
+                        </div>
+
+                        <div class="subtitle">
+                            "Explore. Learn. Thrive.: Your Hub for Educational Enlightenment."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image:url(../static/images/Exercise.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="../static/logos/classroom-512.png">
+                        </div>
+
+                        <div class="subtitle">
+                            "Workout Your Mind, Shape Your Future: Unleash Potential with Educational Exercise."
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image:url(../static/images/2.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="../static/logos/dailysmarty.png">
+                        </div>
+
+                        <div class="subtitle">
+                            It's true there are many tutorial on Youtube but I recommend to learn programming from this
+                            website FreecodeCamp.org. I started it from here and it is easy to learn as they provide
+                            sources and solutions to the task given and it is also completely free!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="logos/open-devos.png">
+                        </div>
+
+                        <div class="subtitle">
+                            "Drawing is the honesty of the art. There is no possibility of cheating. It is either good
+                            or bad." Nowadays, my time to draw are limited as there are many things that I want to do
+                            but my burning passion from it will never light off.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/open-devos.png">
+                    </div>
+                
+                    <div class="subtitle">
+                        "Drawing is the honesty of the art. There is no possibility of cheating. It is either good
+                        or bad." Nowadays, my time to draw are limited as there are many things that I want to do
+                        but my burning passion from it will never light off.
+                    </div>
+                </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/open-devos.png">
+                    </div>
+                
+                    <div class="subtitle">
+                        "Drawing is the honesty of the art. There is no possibility of cheating. It is either good
+                        or bad." Nowadays, my time to draw are limited as there are many things that I want to do
+                        but my burning passion from it will never light off.
+                    </div>
+                </div>
+                </div>
+
+
+
+
+        </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classlist);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+
+
+</script>
+
+</html>
